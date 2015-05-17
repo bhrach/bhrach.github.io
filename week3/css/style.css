@@ -1,0 +1,77 @@
+/*********
+ *GENERAL*
+ *********/
+@font-face {
+  font-family: 'Steamwreck';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Steamwreck'), url('../steamwreck.otf') format('truetype');
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgba(12,52,122,255);
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/********
+ *HEADER*
+ ********/
+header {
+  margin: 0 0 0 0;
+  width: 100%;
+  background: url('../img/tentacles.png') no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+#title {
+  display: inline-block;
+  margin-top: 1.3em;
+  margin-bottom: 0;
+  font-family: "Steamwreck", serif;
+  font-size: 10em;
+  color: rgba(255,255,255,255);
+}
+
+h1 {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 7.5em;
+}
+
+#triangle {
+  max-width: 100%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 120px 100px 0 100px;
+  border-color: rgba(255,0,100,255) transparent transparent transparent;
+  font-size: 2em;
+  color: white;
+}
+
+/*******
+ *LINKS*
+ *******/
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  width: 320px;
+  height: 240px;
+}
+
+
+
