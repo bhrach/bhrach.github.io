@@ -6,8 +6,11 @@
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  src: local('Steamwreck'), url('../steamwreck.otf') format('truetype');
+  src: local('Steamwreck'), url('../fonts/steamwreck.otf') format('truetype');
+
 }
+
+* { margin:0;padding:0;box-sizing:border-box;}
 
 body {
   margin: 0 auto;
@@ -21,6 +24,8 @@ body {
  ********/
 header {
   margin: 0 0 0 0;
+  
+  height: 70vh;
   width: 100%;
   background: url('../img/tentacles.png') no-repeat;
   background-size: 100%;
@@ -29,7 +34,7 @@ header {
 
 #title {
   display: inline-block;
-  margin-top: 1.3em;
+  margin-top: 1em;
   margin-bottom: 0;
   font-family: "Steamwreck", serif;
   font-size: 10em;
@@ -39,23 +44,43 @@ header {
 h1 {
   margin-top: 0;
   color: white;
-  margin-bottom: 7.5em;
+  margin-bottom: 2.5em;
 }
 
-#triangle {
-  max-width: 100%;
-  display: inline-block;
-  border-style: solid;
-  border-width: 120px 100px 0 100px;
-  border-color: rgba(255,0,100,255) transparent transparent transparent;
-  font-size: 2em;
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-aap7pn');
+  src:url('../fonts/icomoon.eot?#iefix-aap7pn') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-aap7pn') format('woff'),
+    url('../fonts/icomoon.ttf?-aap7pn') format('truetype'),
+    url('../fonts/icomoon.svg?-aap7pn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   color: white;
+  font-size: 4em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-anchor:before {
+  content: "\e600";
 }
 
 /*******
  *LINKS*
  *******/
-
 ul {
   text-decoration: none;
   list-style-type: none;
@@ -64,13 +89,18 @@ ul {
 li {
   float: left;
   padding-top: 20px;
-  padding-left: 5px;
+  padding-left: 17px;
   padding-right: 5px;
 }
 
 img {
   width: 320px;
   height: 240px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
 }
 
 
